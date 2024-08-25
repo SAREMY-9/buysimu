@@ -114,15 +114,21 @@
 
 		
 	
-
+    <div class="form-check p-4 d-flex">
+            <input class="form-check-input" type="checkbox" id="termsCheckbox">
+            <label class="form-check-label" for="termsCheckbox">
+                I have read and agreed to the <a href="#" target="_blank">terms of the contract</a>.
+            </label>
+        </div>
 
 
 
 
 
 <div class="d-flex">
+  
     <a class="btn btn-outline-danger p-3" href="{{ route('contractAgreement') }}">Back</a>
-    <a class="btn btn-outline-danger p-3 ms-auto" href="{{ route('Contractagreement')}}">Agree</a> 
+    
 </div>
 
 
@@ -137,6 +143,14 @@
 
 </div>
 
+    
+<script>
+    document.getElementById('termsCheckbox').addEventListener('change', function() {
+        if (this.checked) {
+            window.location.href = "{{ route('Contractagreement') }}";
+        }
+    });
+</script>
 
 </body>
 </html>

@@ -57,17 +57,20 @@ By signing this contract, the Hirer will be deemed to have exercised his/her fre
 		
 	
 
-
+     <div class="form-check p-4 d-flex">
+            <input class="form-check-input" type="checkbox" id="termsCheckbox">
+            <label class="form-check-label" for="termsCheckbox">
+                I have read and agreed to the <a href="#" target="_blank" class="text-decoration-none">terms of the contract</a>
+            </label>
+        </div>
 
 
 
 
 <div class="d-flex">
+    
     <a class="btn btn-outline-danger p-3" href="{{ route('ContractAgreement') }}">Back</a>
-    <a class="btn btn-outline-danger p-3 ms-auto"  href="{{route('application')}}">  Step 2.</a>  
-
-
-                                    
+                                        
 </div>
 
 
@@ -81,6 +84,15 @@ By signing this contract, the Hirer will be deemed to have exercised his/her fre
 	</div>
 
 </div>
+
+    
+<script>
+    document.getElementById('termsCheckbox').addEventListener('change', function() {
+        if (this.checked) {
+            window.location.href = "{{ route('application') }}";
+        }
+    });
+</script>
 
 
 </body>

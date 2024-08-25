@@ -65,6 +65,10 @@
 			gtag("config", "G-GBZ3SGGX85");
 		</script>
 
+
+         <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+
 	</head>
 	<body>
 
@@ -98,14 +102,17 @@
 								
 								<nav aria-label="breadcrumb" role="navigation">
 									<ol class="breadcrumb">
-										<li class="breadcrumb-item">
+										<li class="breadcrumb-item active" aria-current="page">
 											<a href="">Home</a>
 										</li>
-										<li class="breadcrumb-item active" aria-current="page">
-											<a href="{{route('contractandterms')}}">
-											Step .1 Terms of Contract</a>
-										</li>
 
+										<li class="breadcrumb-item " >
+											
+											Click My Simu KIT
+											
+										<i class="fas fa-chevron-right"></i>
+												
+										</li>
 									
 									</ol>
 								</nav>
@@ -118,12 +125,12 @@
 										role="button"
 										data-toggle="dropdown"
 									>
-										My Buy Simu KIT
+										My Simu KIT
 									</a>
 									<div class="dropdown-menu dropdown-menu-right">
 
-										<a class="dropdown-item" href="{{route('contractandterms')}}">Contract</a>
-										<a class="dropdown-item" href="{{route('application')}}">Product Specification</a>
+										<a class="dropdown-item" href="{{route('contractandterms')}}">Step 1.Contract</a>
+										<a class="dropdown-item" href="{{route('contractandterms')}}">Step 2.Product Specification</a>
 										<a class="dropdown-item" href="{{route('userResults')}}">My Loan</a>
 										
 										
@@ -152,11 +159,13 @@
 
 				<div class="footer-wrap pd-20 mb-20 card-box ">
 					
-					<a href="https://github.com/SAREMY-9  " target="_blank"   style="text-decoration: none;"
+					<a href="https://x.com/JnrVitalis" target="_blank"   style="text-decoration: none;"
 
 						> <p class="bg-light text-danger "> BUY SIMU By SaremyInc </p></a
 					>
+
 				</div>
+
 			</div>
 		</div>		<!-- js -->
 		<script src="/back/vendors/scripts/core.js"></script>

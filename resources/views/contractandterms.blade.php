@@ -24,7 +24,7 @@
 
 <h5 class="text-color-primary text-center">Shop Name</h5> 
 
-<p class="">This Hire Purchase Agreement (hereinafter referred as <strong>Agreement’</strong>) was made on <i>.....………………………………..………………................................................................................. </i> 
+<p class="">This Hire Purchase Agreement (hereinafter referred as <strong>Agreement’</strong>) was made on <i>.....………………………………..….</i> 
 <p class="text-center text-dark"> <strong> BY AND BETWEEN </strong> </p>
 
 <p class="text-center"> BUY SIMU (hereinafter referred to as the OWNER)</p> 
@@ -33,13 +33,13 @@
 
 <!-------include biodata her------->
 
-<p> Name: (Mr/Mrs/Miss/Dr/Prof/Hon) ……………………………………………………………………..…………………………………………..…………………………………………………………………………………………………………..…………………………..<br>
-National ID/Passport No: …………………..…………………………………………………………………………Date of Birth ...………..……………………….……………………………………………………………………………………………………………………<br>
-Phone Number: …………………..…………………………….…………………………………………………….Alternative Number………………..…………………………………………….…………………………………………………………………………………….<br>
-Email Address: ……………………………………………………………………..………………………………..……………..………………………………..……………………..………………………………………………………………………………………………………………………………
-<br> Postal Address: P.O. Box …………………………………………..………………Postal Code………………………….…………..………….Town………………………………………………
+<p> Name: (Mr/Mrs/Miss/Dr/Prof/Hon) ……………………………………………………………………..<br>
+National ID/Passport No: …………………..……………………………Date of Birth ...………..……………………….………<br>
+Phone Number: …………………..…………………………….…Alternative Number………………..………………………………<br>
+Email Address: ……………………………………………………………………..……
+<br> Postal Address: P.O. Box …………………………………………..………………Postal Code………………………….Town……………………………
 Physical Address: Town……………..……………….………Estate…………………………….…..… Building………………………………….House Number……..………………………
-<br> Next of Kin: ………………………………………………………………….………Phone Number…………………………….……………Relationship……………………………………………………………………………………………………………………………… </p>
+<br> Next of Kin: …………………………………Phone Number…………………………….……………Relationship………………………………………………</p>
 
 
 <p>(Hereinafter referred to as the Hirer), Which terms or expression shall unless repugnant 
@@ -101,13 +101,20 @@ hereafter in these presents expressed and contained.
 			
 		</div>
 
-<div class="d-flex">
 
-    <a class="btn btn-outline-danger p-3" href="{{ route('dashboard') }}">Dashboard</a>
+       
 
-    <a class="btn btn-outline-danger p-3 ms-auto" href="{{ route('contractAgreement') }}">Agree</a>
+		
 
-</div>
+
+
+		<div class="form-check p-4 d-flex">
+            <input class="form-check-input" type="checkbox" id="termsCheckbox">
+            <label class="form-check-label" for="termsCheckbox">
+                I have read and agreed to the <a href="#" target="_blank">terms of contract</a>.
+            </label>
+        </div>
+
 
 
  <p class="p-3">Page 1 of 4</p>
@@ -120,6 +127,19 @@ hereafter in these presents expressed and contained.
 	</div>
 
 </div>
+
+
+
+
+   
+<script>
+    document.getElementById('termsCheckbox').addEventListener('change', function() {
+        if (this.checked) {
+            window.location.href = "{{ route('contractAgreement') }}";
+        }
+    });
+</script>
+
 
 
 </body>

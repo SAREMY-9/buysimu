@@ -165,7 +165,9 @@
                     </div>
 
                     <div class="text-center text-sm text-black-500 dark:text-black-400 sm:text-right sm:ml-0">
+
                         <a href="https://x.com/JnrVitalis">BUY SIMU By SaremyInc. </a> 
+                        
                     </div>
                 </div>
             </div>
