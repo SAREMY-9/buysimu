@@ -25,7 +25,52 @@
      <br>
      
 </form>
+
+
+
+ 
 </form-group>
+
+
+    
+                <!---new table----->
+
+                 <h5 class="text-center mb-4">CLIENT DETAILS</h5>
+
+        <div class="table-responsive p-3">
+            <table class="table table-striped table-bordered">
+                <thead class="table-secondary">
+                    <tr>
+                        <th>Names</th>
+                        <th>Email</th>
+                        <th>Phone</th>
+                        <th>Alt Phone</th>
+                        <th>ID/Passport</th>
+                        <th>Client Id/Passport</th>
+                        <th>DoB</th>
+                        <th>Postal Address</th>
+                        <th>Town</th>
+                        <th>Physical Address</th>
+                        <th>Estate</th>
+                        <th>Building</th>
+                        <th>Next of kin</th>
+                         <th>Next of No</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+
+                   
+                    
+                    
+                    
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+
+       
 
 
 

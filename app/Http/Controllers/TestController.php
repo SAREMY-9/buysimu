@@ -319,7 +319,7 @@ class TestController extends Controller
 
         if($user){
 
-            return redirect()->route('pTest')-> with('success','THE USER IS REGISTERED ON OUR SYSTEM'); 
+            return redirect()->route('pTest')-> with('success','THE USER EXISTS IN SYSTEM'); 
 
         }
 
@@ -331,10 +331,10 @@ class TestController extends Controller
 
 
 
-    
+
     public function testUpload(){
 
-        $test= Test()->where('theoryTest','practicalTest');
+        $test=Test()->where('theoryTest','practicalTest');
 
         return view('prac',$test);
     }

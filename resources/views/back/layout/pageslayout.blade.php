@@ -461,27 +461,42 @@
 							</a>
 							<ul class="submenu">
 
-								<li><a href="{{route('test')}}">Theory Test</a></li>
+					    		<li><a href="{{route('testVerify')}}">Client Verification</a></li>
 
-								<li><a href="{{route('testVerify')}}">Client Verification</a></li>
+								<li><a href="{{route('devicespecs')}}">Device Specification</a></li>
 
-								<li>
+								
+
+
+							<!--	
+								
+							    <li><a href="{{route('test')}}">Theory Test</a></li>
+
+								   <li>
 									<a href="{{route('practical')}}">Practical Test</a>
 								</li>
+
+							--->
+
 								
 							</ul>
 						</li>
 						<li class="dropdown">
 							<a href="javascript:;" class="dropdown-toggle">
 								<span class="micon bi bi-table"></span
-								><span class="mtext">Results</span>
+								><span class="mtext">Loans</span>
 							</a>
 							<ul class="submenu">
-								<li><a href="{{route('resuilts')}}">Upload</a></li>
-								<li><a href="">Edit</a></li>
-								<li><a href="{{route('admin.home')}}">View</a></li>
+
+								<li><a href="{{route('resuilts')}}">List</a></li>
+								<li><a href="">Approved</a></li>
+								<li><a href="{{route('admin.home')}}">Pending</a></li>
 							</ul>
 						</li>
+
+
+						<!--
+
 						<li>
 							<a href="calendar.html" class="dropdown-toggle no-arrow">
 								<span class="micon bi bi-calendar4-week"></span
@@ -489,6 +504,7 @@
 							</a>
 						</li>
 
+                        ---->
 
 												<li class="dropdown">
 							<a href="javascript:;" class="dropdown-toggle">
@@ -539,15 +555,6 @@
 										<li>
 
 
-											@if(session('success'))
-
-											<div class="alert alert-success">
-
-												{{session('success')}}
-												
-											</div>
-
-											@endif
 										</li>
 									</ol>
 								</nav>

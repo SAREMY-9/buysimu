@@ -34,6 +34,8 @@ Route::view('/userDetails','userDetails');
 
 Route::view('/user_data','user_data'); 
 
+Route::view('/devicespecs','devicespecs')->name('devicespecs'); 
+
 
 
 Route::post('/search',[SearchController::class,'search'])->name('search');

@@ -88,8 +88,7 @@ class SearchController extends Controller
       );
 
          
-         //check if user exists
-        
+
          $idpassport=$verify;
 
          $user=Bookings::where('clientIdPassport',$idpassport)->first();
