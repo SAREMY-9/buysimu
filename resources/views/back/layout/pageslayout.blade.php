@@ -145,59 +145,14 @@
 								<ul>
 									<li>
 										<a href="#">
-											<img src="/back/vendors/images/img.jpg" alt="" />
-											<h3>Evans Mwenda</h3>
+											<img src="/back/vendors/images/buysimulogo.png" alt="" />
+											<h3>Admin</h3>
 											<p>
-												This is Buy Simu admin's account.........
+												Bridging the Digital Divide..
 											</p>
 										</a>
 									</li>
-									<li>
-										<a href="#">
-											<img src="/back/vendors/images/photo1.jpg" alt="" />
-											<h3>Mohammed Salah</h3>
-											<p>
-												This is Buy Simu admin's account.........
-											</p>
-										</a>
-									</li>
-									<li>
-										<a href="#">
-											<img src="/back/vendors/images/photo2.jpg" alt="" />
-											<h3>Micheal  Scoffield</h3>
-											<p>
-												This is Buy Simu admin's account.........
-											</p>
-										</a>
-									</li>
-									<li>
-										<a href="#">
-											<img src="/back/vendors/images/photo3.jpg" alt="" />
-											<h3>Dembe</h3>
-											<p>
-												This is Buy Simu admin's account.........
-											</p>
-										</a>
-									</li>
-									<li>
-										<a href="#">
-											<img src="/back/vendors/images/photo4.jpg" alt="" />
-											<h3>John Doe</h3>
-											<p>
-												This is the Buy Simu admin's account
-												...
-											</p>
-										</a>
-									</li>
-									<li>
-										<a href="#">
-											<img src="/back/vendors/images/img.jpg" alt="" />
-											<h3>Dirk Kuyt</h3>
-											<p>
-												This is Buy Simu admin's account.........
-											</p>
-										</a>
-									</li>
+									
 								</ul>
 							</div>
 						</div>
@@ -216,9 +171,9 @@
 							data-toggle="dropdown"
 						>
 							<span class="user-icon">
-								<img src="/back/vendors/images/" alt="" />
+								<img src="/back/vendors/images/buysimulogo.png" alt="" />
 							</span>
-							<span class="user-name">Thomas Shelby</span>
+							<span class="user-name">Admin</span>
 						</a>
 						<div
 							class="dropdown-menu dropdown-menu-right dropdown-menu-icon-list"
@@ -257,10 +212,8 @@
 							role="button"
 							data-toggle="dropdown"
 						>
-							<span class="user-icon">
-								<img src="/back/vendors/images/photo1.jpg" alt="" />
-							</span>
-							<span class="user-name">Raymond Reddington</span>
+							
+							
 						</a>
 						<div
 							class="dropdown-menu dropdown-menu-right dropdown-menu-icon-list"
@@ -303,7 +256,7 @@
 
 		<div class="right-sidebar">
 			<div class="sidebar-title">
-				<h3 class="weight-600 font-16 text-blue">
+				<h3 class="weight-600 font-16 text-red">
 					Layout Settings
 					<span class="btn-block font-weight-400 font-12"
 						>User Interface Settings</span
@@ -319,12 +272,12 @@
 					<div class="sidebar-btn-group pb-30 mb-10">
 						<a
 							href="javascript:void(0);"
-							class="btn btn-outline-success header-white active"
+							class="btn btn-outline-danger header-white active"
 							>White</a
 						>
 						<a
 							href="javascript:void(0);"
-							class="btn btn-outline-success header-dark"
+							class="btn btn-outline-danger header-dark"
 							>Dark</a
 						>
 					</div>
@@ -333,12 +286,12 @@
 					<div class="sidebar-btn-group pb-30 mb-10">
 						<a
 							href="javascript:void(0);"
-							class="btn btn-outline-success sidebar-light"
+							class="btn btn-outline-danger sidebar-light"
 							>White</a
 						>
 						<a
 							href="javascript:void(0);"
-							class="btn btn-outline-success sidebar-dark active"
+							class="btn btn-outline-danger sidebar-dark active"
 							>Dark</a
 						>
 					</div>
@@ -496,7 +449,7 @@
 							</a>
 							<ul class="submenu">
 
-								<li><a href="{{route('admin.home')}}">Dashboard</a></li>
+								<li class="text-decoration-none"><a href="{{route('admin.home')}}">Dashboard</a></li>
 								<li><a href="">Profile</a></li>
 								<li><a href="">FAQs</a></li>
 							</ul>
@@ -504,15 +457,13 @@
 						<li class="dropdown">
 							<a href="javascript:;" class="dropdown-toggle">
 								<span class="micon bi bi-textarea-resize"></span
-								><span class="mtext">Center</span>
+								><span class="mtext">Reports</span>
 							</a>
 							<ul class="submenu">
-								
-								<li><a href="">Booked Dereva's</a></li>
 
 								<li><a href="{{route('test')}}">Theory Test</a></li>
 
-								<li><a href="{{route('testVerify')}}">Test Verification</a></li>
+								<li><a href="{{route('testVerify')}}">Client Verification</a></li>
 
 								<li>
 									<a href="{{route('practical')}}">Practical Test</a>
@@ -581,7 +532,7 @@
 										<li class="breadcrumb-item">
 											<a href="{{route('admin.home')}}">Home</a>
 										</li>
-										<li class="breadcrumb-item active" aria-current="page">
+										<li class="breadcrumb-item" aria-current="page">
 											DASHBOARD 
 										</li>
 
@@ -604,12 +555,12 @@
 							<div class="col-md-6 col-sm-12 text-right">
 								<div class="dropdown">
 									<a
-										class="btn btn-success dropdown-toggle"
+										class="btn btn-danger dropdown-toggle"
 										href="#"
 										role="button"
 										data-toggle="dropdown"
 									>
-										November 2023
+										ADMIN KIT
 									</a>
 									<div class="dropdown-menu dropdown-menu-right">
 										<a class="dropdown-item" href="#">Export List</a>

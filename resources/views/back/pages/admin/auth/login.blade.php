@@ -3,7 +3,7 @@
 @section('content')
 
 
-      
+     
 
 
         @if(session('error'))
@@ -16,7 +16,7 @@
 
       @endif
         <div class="login-title">
-            <h2 class="text-center text-primary">Buy Simu Login</h2>
+            <h2 class="text-center text-danger">Buy Simu Login</h2> 
         </div>
         <form action="{{ route('admin.login_handler')}}" method="POST">
             @csrf
@@ -62,13 +62,13 @@
             @enderror
             <div class="row pb-30">
                 <div class="col-6">
-                    <div class="custom-control custom-checkbox">
-                        <input type="checkbox" class="custom-control-input" id="customCheck1">
+                    <div class="custom-control custom-checkbox text-danger">
+                        <input type="checkbox" class="custom-control-input " id="customCheck1">
                         <label class="custom-control-label" for="customCheck1">Remember</label>
                     </div>
                 </div>
                 <div class="col-6">
-                    <div class="forgot-password">
+                    <div class="forgot-password text-danger"> 
                         <a href="{{route('admin.forgot-password')}}">Forgot Password</a>
                     </div>
                 </div>
@@ -78,7 +78,7 @@
                     <div class="input-group mb-0">
                         
                         
-                    <input class="btn btn-primary btn-lg btn-block" type="submit" value="Sign In">
+                    <input class="btn btn-danger btn-lg btn-block" type="submit" value="Sign In">
                     
                      <!------   <a class="btn btn-primary btn-lg btn-block" href="index.html">Sign In</a>    --->
 

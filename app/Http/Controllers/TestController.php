@@ -9,6 +9,7 @@ use Illuminate\Support\Facades\Auth;
 use App\Models\Test;
 use App\Models\Bookings;
 use App\Models\Admins;
+use App\Models\User;
 
 
 class TestController extends Controller
@@ -100,6 +101,8 @@ class TestController extends Controller
        }
         
     }
+
+
 
    
   public function applicationForm(Request $request)  
@@ -206,6 +209,7 @@ class TestController extends Controller
       ]);
     
    
+
       
 
       if($booked){
@@ -221,6 +225,7 @@ class TestController extends Controller
       }
 
   }
+
 
 
     public function theoryTest(Request $request)
@@ -245,11 +250,15 @@ class TestController extends Controller
 
 
 
+
+
     public function testVerify(){
 
           return view('test.verify');
      
     }
+
+
 
 
 
@@ -260,15 +269,16 @@ class TestController extends Controller
     }
 
 
- public function testPractical(Request $request)
-{
+
+          public function testPractical(Request $request)
+       {
 
     
-    // Validate the form data
-    $validatedData = $request->validate([
-        'candidateId' => 'required|exists:tests,candidateId',  
-        'practicalTestAdmin' => 'required', 
-        'pracTest' => 'required|in:Passed,Failed',
+            // Validate the form data
+            $validatedData = $request->validate([
+              'candidateId' => 'required|exists:tests,candidateId',  
+               'practicalTestAdmin' => 'required', 
+            'pracTest' => 'required|in:Passed,Failed',
     ]);
 
 
@@ -295,11 +305,13 @@ class TestController extends Controller
     
 
 
+     // Client verify 
+
     public function pTest(Request $request){
 
         $validateInfo=$request->validate([
 
-            'candidateId' => 'required|exists:tests,candidateId', 
+            'userId' => 'required|exists:users,idPp',
 
         ]);
 
@@ -307,16 +319,19 @@ class TestController extends Controller
 
         if($user){
 
-            return redirect()->route('practical')-> with('success','THE USER IS CLEARED TO TAKE PRACTICALS'); 
+            return redirect()->route('pTest')-> with('success','THE USER IS REGISTERED ON OUR SYSTEM'); 
 
         }
 
         else {
             
-            return "Hello the user is not found";
+            return "Hello the user is not registered on our system";
         }
     }
 
+
+
+    
     public function testUpload(){
 
         $test= Test()->where('theoryTest','practicalTest');

@@ -99,7 +99,7 @@ class SearchController extends Controller
 
            // return view('userDetails');
 
-            return view('user_data',compact('user'))->with('success','This user is booked for the test');
+            return view('user_data',compact('user'))->with('success','This loan exists');
 
          }
 

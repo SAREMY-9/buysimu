@@ -1,3 +1,7 @@
+@extends('back.pages.admin.home') 
+@section('pageTitle', Isset($pageTitle) ? $pageTitle : 'Buy Simu')
+@section('content')
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -85,9 +89,9 @@
             </table>
         </div>
 
-        <div class="d-flex justify-content-between mt-4">
-            <a class="btn btn-outline-danger p-3" href="{{ route('dashboard') }}">Close</a>
-            <a class="btn btn-outline-danger p-3" href="{{ route('contractAgreement') }}">Next</a>
+        <div class="d-flex mt-4">
+            <a class="btn btn-outline-danger p-3 " href="{{ route('dashboard') }}">Close</a>
+           
         </div>
 
         <p class="text-center mt-3">Page 1 of 4</p>
@@ -108,3 +112,5 @@
 
 </body>
 </html>
+
+@endsection

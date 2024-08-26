@@ -54,12 +54,12 @@
 			>
 				<div class="brand-logo">
 					<a href="{{route('admin.home')}}">
-						<img src="/back/vendors/images/ntsa logo.png" alt="" />
+						<img src="/back/vendors/images/buysimulogo.png" alt=""/>  
 					</a>
 				</div>
 				<div class="login-menu">
 					<ul>
-						<li><a href="{{route('admRegister')}}">Register</a></li>
+						<li class="text-danger"><a href="{{route('admRegister')}}">Register</a></li>
 					</ul>
 				</div>
 			</div>
@@ -89,4 +89,4 @@
         @stack('scripts')
 
 	</body>
-</html>
+<html>

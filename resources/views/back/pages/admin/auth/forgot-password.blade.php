@@ -3,7 +3,7 @@
 @section('content')
 <div class="login-box bg-white box-shadow border-radius-10">
     <div class="login-title">
-        <h2 class="text-center text-primary">Forgot Password</h2>
+        <h2 class="text-center text-danger">Forgot Password</h2>
     </div>
     <h6 class="mb-20">
         Enter your email address to reset your password
@@ -65,7 +65,7 @@
                 <div class="input-group mb-0">
                     
                    
-                    <input class="btn btn-primary btn-lg btn-block" type="submit" value="Submit">
+                    <input class="btn btn-danger btn-lg btn-block" type="submit" value="Submit">
                 <!--
                     <a class="btn btn-primary btn-lg btn-block" href="index.html">Submit</a>   --->
                 </div>
@@ -77,10 +77,12 @@
             </div>
             <div class="col-5">
                 <div class="input-group mb-0">
-                    <a class="btn btn-outline-primary btn-lg btn-block" href="{{route('admin.login')}}">Login</a>
+                    <a class="btn btn-outline-danger btn-lg btn-block" href="{{route('admin.login')}}">Login</a>
                 </div>
             </div>
         </div>
     </form>
 </div>
 @endsection
+
+
