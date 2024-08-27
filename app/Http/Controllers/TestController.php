@@ -115,7 +115,7 @@ class TestController extends Controller
     
 
          'deviceModel'=>['required','string','max:65'],
-         'serialNumber'=>['required','string','min:11','max:11'],
+         'serialNumber'=>['required','string','min:8','max:15'],
          'imeiNumber'=>['required','min:15','max:16'], 
          'cashPrice'=>['required','string','min:0'],
          'deposit'=>['required','string','min:0'],
@@ -150,6 +150,7 @@ class TestController extends Controller
         'deviceModel.required' => 'Please provide the device model.',
         'serialNumber.required' => 'The serial number is required.',
         'serialNumber.min' => 'The serial number is invalid.',
+         'serialNumber.max' => 'The serial number is invalid.',
         'imeiNumber.required' => 'The IMEI number is required.', 
         'imeiNumber.min' => 'The IMEI number is Invalid.',
         'imeiNumber.max' => 'The IMEI number is Invalid.', 
